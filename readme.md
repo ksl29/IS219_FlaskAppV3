@@ -1,13 +1,12 @@
 # Project Setup
 
-[![Production Workflow](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml/badge.svg)](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml)
+[![Production Workflow](https://github.com/ksl29/IS219_FlaskAppV3/actions/workflows/prod.yml/badge.svg)](https://github.com/ksl29/IS219_FlaskAppV3/actions/workflows/prod.yml)
 
-* [Production Deployment](https://kwilliam-prod.herokuapp.com/)
+* [Production Deployment](https://ksl29-prod.herokuapp.com/)
 
+[![Development Workflow](https://github.com/ksl29/IS219_FlaskAppV3/actions/workflows/dev.yml/badge.svg)](https://github.com/ksl29/IS219_FlaskAppV3/actions/workflows/dev.yml)
 
-[![Development Workflow](https://github.com/kaw393939/docker_flask/actions/workflows/dev.yml/badge.svg)](https://github.com/kaw393939/docker_flask/actions/workflows/dev.yml)
-
-* [Developmental Deployment](https://kwilliam-dev.herokuapp.com/)
+* [Developmental Deployment](https://ksl29-dev.herokuapp.com/)
 
 ## Setting up CI/CD
 
@@ -21,7 +20,7 @@ app/dyno.
 3. Change the origin by replacing it with your own new repo.  (Do not add a readme or any other file while creating the repository)
 4. Create an account with Heroku, create an app for production and an app for development
 5. Create a new repo in Docker hub
-6. Rename .env.test to .env and fill out the correct information
+
 #### Setup Docker and Heroku Credentials In the Repository Settings under Action -> Secret
 
 6. In your newly created Github repository, add new repository secrets for DOCKER_USERNAME, DOCKER_PASSWORD, HEROKU_API_KEY (Values are DOCKER_USERNAME: your docker hub username; DOCKER_PASSWORD: your docker hub password; HEROKU_API_KEY: API key from the heroku app)
