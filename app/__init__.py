@@ -35,7 +35,6 @@ def create_app():
         app.config.from_object("app.config.DevelopmentConfig")
     elif os.environ.get("FLASK_ENV") == "testing":
         app.config.from_object("app.config.TestingConfig")
-        app.config['WTF_CSRF_ENABLED'] = False
     app.mail = Mail(app)
 
     # https://flask-login.readthedocs.io/en/latest/  <-login manager
