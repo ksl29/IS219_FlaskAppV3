@@ -8,7 +8,6 @@ def test_adding_user(application):
     log = logging.getLogger("myApp")
     with application.app_context():
         assert db.session.query(User).count() == 0
-        assert db.session.query(Song).count() == 0
         #showing how to add a record
         #create a record
         user = User('keith@webizly.com', 'testtest',0)
